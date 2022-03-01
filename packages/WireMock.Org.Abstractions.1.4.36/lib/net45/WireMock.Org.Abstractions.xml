@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WireMock.Org.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:WireMock.Org.Abstractions.BasicAuthCredentials">
+            <summary>
+            Pre-emptive basic auth credentials to match against
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.Id">
+            <summary>
+            This stub mapping's unique identifier
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.Uuid">
+            <summary>
+            Alias for the id
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.Name">
+            <summary>
+            The stub mapping's name
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.Persistent">
+            <summary>
+            Indicates that the stub mapping should be persisted immediately on create/update/delete and survive resets to default.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.Priority">
+            <summary>
+            This stub mapping's priority relative to others. 1 is highest.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.ScenarioName">
+            <summary>
+            The name of the scenario that this stub mapping is part of
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.RequiredScenarioState">
+            <summary>
+            The required state of the scenario in order for this stub to be matched.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.NewScenarioState">
+            <summary>
+            The new state for the scenario to be updated to after this stub is served.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.PostServeActions">
+            <summary>
+            A map of the names of post serve action extensions to trigger and their parameters.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Mapping.Metadata">
+            <summary>
+            Arbitrary metadata to be used for e.g. tagging, documentation. Can also be used to find and remove stubs.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.NearMiss.Method">
+            <summary>
+            The HTTP request method
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.NearMiss.Url">
+            <summary>
+            The path and query to match exactly against
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.NearMiss.AbsoluteUrl">
+            <summary>
+            The full URL to match against
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.NearMiss.Headers">
+            <summary>
+            Header patterns to match against in the &lt;key&gt;: { "&lt;predicate&gt;": "&lt;value&gt;" } form
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.NearMiss.Cookies">
+            <summary>
+            Cookie patterns to match against in the &lt;key&gt;: { "&lt;predicate&gt;": "&lt;value&gt;" } form
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.NearMiss.Body">
+            <summary>
+            Body string to match against
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.Method">
+            <summary>
+            The HTTP request method e.g. GET
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.Url">
+            <summary>
+            The path and query to match exactly against. Only one of url, urlPattern, urlPath or urlPathPattern may be specified.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.UrlPath">
+            <summary>
+            The path to match exactly against. Only one of url, urlPattern, urlPath or urlPathPattern may be specified.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.UrlPathPattern">
+            <summary>
+            The path regex to match against. Only one of url, urlPattern, urlPath or urlPathPattern may be specified.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.UrlPattern">
+            <summary>
+            The path and query regex to match against. Only one of url, urlPattern, urlPath or urlPathPattern may be specified.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.QueryParameters">
+            <summary>
+            Query parameter patterns to match against in the &lt;key&gt;: { "&lt;predicate&gt;": "&lt;value&gt;" } form
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.Headers">
+            <summary>
+            Header patterns to match against in the &lt;key&gt;: { "&lt;predicate&gt;": "&lt;value&gt;" } form
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.BasicAuthCredentials">
+            <summary>
+            Pre-emptive basic auth credentials to match against
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.Cookies">
+            <summary>
+            Cookie patterns to match against in the &lt;key&gt;: { "&lt;predicate&gt;": "&lt;value&gt;" } form
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Request.BodyPatterns">
+            <summary>
+            Request body patterns to match against in the &lt;key&gt;: { "&lt;predicate&gt;": "&lt;value&gt;" } form
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.Status">
+            <summary>
+            The HTTP status code to be returned
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.StatusMessage">
+            <summary>
+            The HTTP status message to be returned
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.Headers">
+            <summary>
+            Map of response headers to send
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.AdditionalProxyRequestHeaders">
+            <summary>
+            Extra request headers to send when proxying to another host.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.Body">
+            <summary>
+            The response body as a string. Only one of body, base64Body, jsonBody or bodyFileName may be specified.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.Base64Body">
+            <summary>
+            The response body as a base64 encoded string (useful for binary content). Only one of body, base64Body, jsonBody or bodyFileName may be specified.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.JsonBody">
+            <summary>
+            The response body as a JSON object. Only one of body, base64Body, jsonBody or bodyFileName may be specified.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.BodyFileName">
+            <summary>
+            The path to the file containing the response body, relative to the configured file root. Only one of body, base64Body, jsonBody or bodyFileName may be specified.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.Fault">
+            <summary>
+            The fault to apply (instead of a full, valid response).
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.FixedDelayMilliseconds">
+            <summary>
+            Number of milliseconds to delay be before sending the response.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.FromConfiguredStub">
+            <summary>
+            Read-only flag indicating false if this was the default, unmatched response. Not present otherwise.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.ProxyBaseUrl">
+            <summary>
+            The base URL of the target to proxy matching requests to.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.TransformerParameters">
+            <summary>
+            Parameters to apply to response transformers.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Response.Transformers">
+            <summary>
+            List of names of transformers to apply to this response.
+            </summary>
+        </member>
+        <member name="T:WireMock.Org.Abstractions.ResponseLogNormal">
+            <summary>
+            Log normal randomly distributed response delay.
+            </summary>
+        </member>
+        <member name="T:WireMock.Org.Abstractions.ResponseLogUniformlyDistributed">
+            <summary>
+            Uniformly distributed random response delay.
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Scenario.Id">
+            <summary>
+            The scenario ID
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Scenario.Name">
+            <summary>
+            The scenario name
+            </summary>
+        </member>
+        <member name="P:WireMock.Org.Abstractions.Scenario.State">
+            <summary>
+            The current state of this scenario
+            </summary>
+        </member>
+    </members>
+</doc>

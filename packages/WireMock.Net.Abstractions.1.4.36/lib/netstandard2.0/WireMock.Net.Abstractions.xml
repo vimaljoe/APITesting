@@ -1,0 +1,1766 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WireMock.Net.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:WireMock.Admin.Mappings.BodyModel">
+            <summary>
+            Body Model
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.BodyModel.Matcher">
+            <summary>
+            Gets or sets the matcher.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.BodyModel.Matchers">
+            <summary>
+            Gets or sets the matchers.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.ClientIPModel">
+            <summary>
+            ClientIPModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ClientIPModel.Matchers">
+            <summary>
+            Gets or sets the matchers.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.CookieModel">
+            <summary>
+            Cookie Model
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.CookieModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.CookieModel.Matchers">
+            <summary>
+            Gets or sets the matchers.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.CookieModel.IgnoreCase">
+            <summary>
+            Gets or sets the ignore case.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.CookieModel.RejectOnMatch">
+            <summary>
+            Reject on match.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.EncodingModel">
+            <summary>
+            EncodingModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.EncodingModel.CodePage">
+            <summary>
+            Encoding CodePage
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.EncodingModel.EncodingName">
+            <summary>
+            Encoding EncodingName
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.EncodingModel.WebName">
+            <summary>
+            Encoding WebName
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.FaultModel">
+            <summary>
+            Fault Model
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.FaultModel.Type">
+            <summary>
+            Gets or sets the fault. Can be null, "", NONE, EMPTY_RESPONSE, MALFORMED_RESPONSE_CHUNK or RANDOM_DATA_THEN_CLOSE.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.FaultModel.Percentage">
+            <summary>
+            Gets or sets the fault percentage.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.HeaderModel">
+            <summary>
+            Header Model
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.HeaderModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.HeaderModel.Matchers">
+            <summary>
+            Gets or sets the matchers.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.HeaderModel.IgnoreCase">
+            <summary>
+            Gets or sets the ignore case.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.HeaderModel.RejectOnMatch">
+            <summary>
+            Reject on match.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.MappingModel">
+            <summary>
+            MappingModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.Guid">
+            <summary>
+            Gets or sets the unique identifier.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.TimeSettings">
+            <summary>
+            Gets or sets the TimeSettings when which this mapping should be used.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.Title">
+            <summary>
+            The unique title.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.Priority">
+            <summary>
+            The priority.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.Scenario">
+            <summary>
+            The Scenario.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.WhenStateIs">
+            <summary>
+            Execution state condition for the current mapping.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.SetStateTo">
+            <summary>
+            The next state which will be signaled after the current mapping execution.
+            In case the value is null state will not be changed.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.Request">
+            <summary>
+            The request model.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.Response">
+            <summary>
+            The response model.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.SaveToFile">
+            <summary>
+            Saves this mapping as a static mapping file.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.Webhook">
+            <summary>
+            The Webhook.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MappingModel.Webhooks">
+            <summary>
+            The Webhooks.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.MatcherModel">
+            <summary>
+            MatcherModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MatcherModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MatcherModel.Pattern">
+            <summary>
+            Gets or sets the pattern. Can be a string (default) or an object.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MatcherModel.Patterns">
+            <summary>
+            Gets or sets the patterns. Can be array of strings (default) or an array of objects.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MatcherModel.PatternAsFile">
+            <summary>
+            Gets or sets the pattern as a file.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MatcherModel.IgnoreCase">
+            <summary>
+            Gets or sets the ignore case.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.MatcherModel.RejectOnMatch">
+            <summary>
+            Reject on match.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.ParamModel">
+            <summary>
+            Param Model
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ParamModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ParamModel.IgnoreCase">
+            <summary>
+            Defines if the key should be matched using case-ignore.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ParamModel.Matchers">
+            <summary>
+            Gets or sets the matchers.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.PathModel">
+            <summary>
+            PathModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.PathModel.Matchers">
+            <summary>
+            Gets or sets the matchers.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.RequestModel">
+            <summary>
+            RequestModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.RequestModel.ClientIP">
+            <summary>
+            Gets or sets the ClientIP. (Can be a string or a ClientIPModel)
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.RequestModel.Path">
+            <summary>
+            Gets or sets the Path. (Can be a string or a PathModel)
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.RequestModel.Url">
+            <summary>
+            Gets or sets the Url. (Can be a string or a UrlModel)
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.RequestModel.Methods">
+            <summary>
+            The methods
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.RequestModel.Headers">
+            <summary>
+            Gets or sets the Headers.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.RequestModel.Cookies">
+            <summary>
+            Gets or sets the Cookies.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.RequestModel.Params">
+            <summary>
+            Gets or sets the Params.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.RequestModel.Body">
+            <summary>
+            Gets or sets the body.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.ResponseModel">
+            <summary>
+            ResponseModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.StatusCode">
+            <summary>
+            Gets or sets the HTTP status.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.BodyDestination">
+            <summary>
+            Gets or sets the body destination (SameAsSource, String or Bytes).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.Body">
+            <summary>
+            Gets or sets the body.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.BodyAsJson">
+            <summary>
+            Gets or sets the body (as JSON object).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.BodyAsJsonIndented">
+            <summary>
+            Gets or sets a value indicating whether child objects to be indented according to the Newtonsoft.Json.JsonTextWriter.Indentation and Newtonsoft.Json.JsonTextWriter.IndentChar settings.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.BodyAsBytes">
+            <summary>
+            Gets or sets the body (as bytearray).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.BodyAsFile">
+            <summary>
+            Gets or sets the body as a file.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.BodyAsFileIsCached">
+            <summary>
+            Is the body as file cached?
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.BodyEncoding">
+            <summary>
+            Gets or sets the body encoding.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.UseTransformer">
+            <summary>
+            Use ResponseMessage Transformer.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.TransformerType">
+            <summary>
+            Gets the type of the transformer.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.UseTransformerForBodyAsFile">
+            <summary>
+            Use the Handlebars transformer for the content from the referenced BodyAsFile.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.TransformerReplaceNodeOptions">
+            <summary>
+            The ReplaceNodeOptions to use when transforming a JSON node.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.Headers">
+            <summary>
+            Gets or sets the headers.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.HeadersRaw">
+            <summary>
+            Gets or sets the Headers (Raw).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.Delay">
+            <summary>
+            Gets or sets the delay in milliseconds.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.MinimumRandomDelay">
+            <summary>
+            Gets or sets the minimum random delay in milliseconds.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.MaximumRandomDelay">
+            <summary>
+            Gets or sets the maximum random delay in milliseconds.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.ProxyUrl">
+            <summary>
+            Gets or sets the Proxy URL.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.X509Certificate2ThumbprintOrSubjectName">
+            <summary>
+            The client X509Certificate2 Thumbprint or SubjectName to use.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.Fault">
+            <summary>
+            Gets or sets the fault.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.ResponseModel.WebProxy">
+            <summary>
+            Gets or sets the WebProxy settings.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.StatusModel">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.StatusModel.Guid">
+            <summary>
+            The optional guid.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.StatusModel.Status">
+            <summary>
+            The status (can also contain the error message).
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.UrlModel">
+            <summary>
+            UrlModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.UrlModel.Matchers">
+            <summary>
+            Gets or sets the matchers.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.WebhookModel">
+            <summary>
+            The Webhook
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebhookModel.Request">
+            <summary>
+            The Webhook Request.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.WebhookRequestModel">
+            <summary>
+            RequestModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebhookRequestModel.Url">
+            <summary>
+            Gets or sets the Url.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebhookRequestModel.Method">
+            <summary>
+            The methods
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebhookRequestModel.Headers">
+            <summary>
+            Gets or sets the headers.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebhookRequestModel.Body">
+            <summary>
+            Gets or sets the body.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebhookRequestModel.BodyAsJson">
+            <summary>
+            Gets or sets the body (as JSON object).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebhookRequestModel.UseTransformer">
+            <summary>
+            Use ResponseMessage Transformer.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebhookRequestModel.TransformerType">
+            <summary>
+            Gets the type of the transformer.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebhookRequestModel.TransformerReplaceNodeOptions">
+            <summary>
+            The ReplaceNodeOptions to use when transforming a JSON node.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Mappings.WebProxyModel">
+            <summary>
+            WebProxy settings
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebProxyModel.Address">
+            <summary>
+            A string instance that contains the address of the proxy server.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebProxyModel.UserName">
+            <summary>
+            The user name associated with the credentials.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Mappings.WebProxyModel.Password">
+            <summary>
+            The password for the user name associated with the credentials.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Requests.LogEntryModel">
+            <summary>
+            Request Log Model
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogEntryModel.Guid">
+            <summary>
+            The unique identifier.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogEntryModel.Request">
+            <summary>
+            The request.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogEntryModel.Response">
+            <summary>
+            The response.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogEntryModel.MappingGuid">
+            <summary>
+            The mapping unique identifier.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogEntryModel.MappingTitle">
+            <summary>
+            The mapping unique title.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogEntryModel.RequestMatchResult">
+            <summary>
+            The request match result.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogEntryModel.PartialMappingGuid">
+            <summary>
+            The partial mapping unique identifier.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogEntryModel.PartialMappingTitle">
+            <summary>
+            The partial mapping unique title.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogEntryModel.PartialRequestMatchResult">
+            <summary>
+            The partial request match result.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Requests.LogRequestMatchModel">
+            <summary>
+            LogRequestMatchModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestMatchModel.TotalScore">
+            <summary>
+            Gets or sets the match-score.
+            </summary>
+            <value>
+            The match-score.
+            </value>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestMatchModel.TotalNumber">
+            <summary>
+            Gets or sets the total number of matches.
+            </summary>
+            <value>
+            The total number of matches.
+            </value>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestMatchModel.IsPerfectMatch">
+            <summary>
+            Gets or sets a value indicating whether this instance is perfect match.
+            </summary>
+            <value>
+            <c>true</c> if this instance is perfect match; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestMatchModel.AverageTotalScore">
+            <summary>
+            Gets the match percentage.
+            </summary>
+            <value>
+            The match percentage.
+            </value>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestMatchModel.MatchDetails">
+            <summary>
+            Gets the match details.
+            </summary>
+            <value>
+            The match details.
+            </value>
+        </member>
+        <member name="T:WireMock.Admin.Requests.LogRequestModel">
+            <summary>
+            RequestMessage Model
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.ClientIP">
+            <summary>
+            The Client IP Address.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.DateTime">
+            <summary>
+            The DateTime.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.Path">
+            <summary>
+            The Path.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.AbsolutePath">
+            <summary>
+            The Absolute Path.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.Url">
+            <summary>
+            Gets the url (relative).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.AbsoluteUrl">
+            <summary>
+            The absolute URL.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.ProxyUrl">
+            <summary>
+            The ProxyUrl (if a proxy is used).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.Query">
+            <summary>
+            The query.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.Method">
+            <summary>
+            The method.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.Headers">
+            <summary>
+            The Headers.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.Cookies">
+            <summary>
+            The Cookies.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.Body">
+            <summary>
+            The body (as string).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.BodyAsJson">
+            <summary>
+            The body (as JSON object).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.BodyAsBytes">
+            <summary>
+            The body (as bytearray).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.BodyEncoding">
+            <summary>
+            The body encoding.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.DetectedBodyType">
+            <summary>
+            The DetectedBodyType, valid values are:
+            
+            - None
+            - String
+            - Json
+            - Bytes
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogRequestModel.DetectedBodyTypeFromContentType">
+            <summary>
+            The DetectedBodyTypeFromContentType, valid values are:
+            
+            - None
+            - String
+            - Json
+            - Bytes
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Requests.LogResponseModel">
+            <summary>
+            Response MessageModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.StatusCode">
+            <summary>
+            Gets or sets the status code.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.Headers">
+            <summary>
+            Gets the headers.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.BodyDestination">
+            <summary>
+            Gets or sets the body destination (SameAsSource, String or Bytes).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.Body">
+            <summary>
+            The body (as string).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.BodyAsJson">
+            <summary>
+            The body (as JSON object).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.BodyAsBytes">
+            <summary>
+            The body (as bytearray).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.BodyAsFile">
+            <summary>
+            Gets or sets the body as file.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.BodyAsFileIsCached">
+            <summary>
+            Is the body as file cached?
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.BodyOriginal">
+            <summary>
+            Gets or sets the original body.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.BodyEncoding">
+            <summary>
+            Gets or sets the body.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.DetectedBodyType">
+            <summary>
+            The detected body type (detection based on body content).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.DetectedBodyTypeFromContentType">
+            <summary>
+            The detected body type (detection based on Content-Type).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.FaultType">
+            <summary>
+            The FaultType.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Requests.LogResponseModel.FaultPercentage">
+            <summary>
+            Gets or sets the Fault percentage.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Scenarios.ScenarioStateModel">
+            <summary>
+            ScenarioStateModel
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Scenarios.ScenarioStateModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Scenarios.ScenarioStateModel.NextState">
+            <summary>
+            Gets or sets the NextState.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Scenarios.ScenarioStateModel.Started">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:WireMock.Admin.Scenarios.ScenarioStateModel"/> is started.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Scenarios.ScenarioStateModel.Finished">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:WireMock.Admin.Scenarios.ScenarioStateModel"/> is finished.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Scenarios.ScenarioStateModel.Counter">
+            <summary>
+            Gets or sets the state counter.
+            </summary>
+        </member>
+        <member name="T:WireMock.Admin.Settings.SettingsModel">
+            <summary>
+            Settings
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.GlobalProcessingDelay">
+            <summary>
+            Gets or sets the global delay in milliseconds.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.AllowPartialMapping">
+            <summary>
+            Gets or sets if partial mapping is allowed.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.RequestLogExpirationDuration">
+            <summary>
+            Gets or sets the RequestLog expiration in hours
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.MaxRequestLogCount">
+            <summary>
+            Gets or sets the MaxRequestLog count.
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.AllowBodyForAllHttpMethods">
+            <summary>
+            Allow a Body for all HTTP Methods. (default set to false).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.HandleRequestsSynchronously">
+            <summary>
+            Handle all requests synchronously. (default set to false).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.ThrowExceptionWhenMatcherFails">
+            <summary>
+            Throw an exception when the Matcher fails because of invalid input. (default set to false).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.UseRegexExtended">
+            <summary>
+            Use the RegexExtended instead of the default <see cref="T:System.Text.RegularExpressions.Regex"/>.  (default set to true).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.SaveUnmatchedRequests">
+            <summary>
+            Save unmatched requests to a file using the <see cref="T:WireMock.Handlers.IFileSystemHandler"/>. (default set to false).
+            </summary>
+        </member>
+        <member name="P:WireMock.Admin.Settings.SettingsModel.CorsPolicyOptions">
+            <summary>
+            Policies to use when using CORS. By default CORS is disabled. [Optional]
+            </summary>
+        </member>
+        <member name="T:WireMock.Models.TimeSettingsModel">
+            <summary>
+            TimeSettingsModel: Start, End and TTL
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.TimeSettingsModel.Start">
+            <summary>
+            Gets or sets the DateTime from which this mapping should be used. In case this is not defined, it's used (default behavior).
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.TimeSettingsModel.End">
+            <summary>
+            Gets or sets the DateTime from until this mapping should be used. In case this is not defined, it's used forever (default behavior).
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.TimeSettingsModel.TTL">
+            <summary>
+            Gets or sets the TTL (Time To Live) in seconds for this mapping. In case this is not defined, it's used (default behavior).
+            </summary>
+        </member>
+        <member name="T:WireMock.Models.ITimeSettings">
+            <summary>
+            TimeSettings: Start, End and TTL
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.ITimeSettings.Start">
+            <summary>
+            Gets or sets the DateTime from which this mapping should be used. In case this is not defined, it's used (default behavior).
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.ITimeSettings.End">
+            <summary>
+            Gets or sets the DateTime from until this mapping should be used. In case this is not defined, it's used forever (default behavior).
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.ITimeSettings.TTL">
+            <summary>
+            Gets or sets the TTL (Time To Live) in seconds for this mapping. In case this is not defined, it's used (default behavior).
+            </summary>
+        </member>
+        <member name="T:WireMock.Models.IWebhook">
+            <summary>
+            IWebhook
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.IWebhook.Request">
+            <summary>
+            Request
+            </summary>
+        </member>
+        <member name="T:WireMock.Models.IWebhookRequest">
+            <summary>
+            IWebhookRequest
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.IWebhookRequest.Url">
+            <summary>
+            The Webhook Url.
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.IWebhookRequest.Method">
+            <summary>
+            The method to use.
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.IWebhookRequest.Headers">
+            <summary>
+            The Headers to send.
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.IWebhookRequest.BodyData">
+            <summary>
+            The body to send.
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.IWebhookRequest.UseTransformer">
+            <summary>
+            Use Transformer.
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.IWebhookRequest.TransformerType">
+            <summary>
+            The transformer type.
+            </summary>
+        </member>
+        <member name="P:WireMock.Models.IWebhookRequest.TransformerReplaceNodeOptions">
+            <summary>
+            The ReplaceNodeOptions to use when transforming a JSON node.
+            </summary>
+        </member>
+        <member name="T:WireMock.Handlers.IFileSystemHandler">
+            <summary>
+            Handler to interact with the file system to handle folders and read and write static mapping files.
+            </summary>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.GetMappingFolder">
+            <summary>
+            Gets the folder where the static mappings are located. For local file system, this would be `{CurrentFolder}/__admin/mappings`.
+            </summary>
+            <returns>The folder name.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.FolderExists(System.String)">
+            <summary>
+            Determines whether the given path refers to an existing directory on disk.
+            </summary>
+            <param name="path">The path.</param>
+            <returns>true if path refers to an existing directory; false if the directory does not exist or an error occurs when trying to determine if the specified directory exists.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.CreateFolder(System.String)">
+            <summary>
+             Creates all directories and subdirectories in the specified path unless they already exist.
+            </summary>
+            <param name="path">The path.</param>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.EnumerateFiles(System.String,System.Boolean)">
+            <summary>
+             Returns an enumerable collection of file names in a specified path.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="includeSubdirectories">A value indicating whether subdirectories should also included when enumerating files.</param>
+            <returns>An enumerable collection of the full names (including paths) for the files in the directory (and optionally subdirectories) specified by path.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.ReadMappingFile(System.String)">
+            <summary>
+            Read a static mapping file as text.
+            </summary>
+            <param name="path">The path (folder + filename with .json extension).</param>
+            <returns>The file content as text.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.WriteMappingFile(System.String,System.String)">
+            <summary>
+            Write the static mapping file.
+            </summary>
+            <param name="path">The path (folder + filename with .json extension).</param>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.ReadResponseBodyAsFile(System.String)">
+            <summary>
+            Read a response body file as byte[].
+            </summary>
+            <param name="path">The path or filename from the file to read.</param>
+            <returns>The file content as bytes.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.ReadResponseBodyAsString(System.String)">
+            <summary>
+            Read a response body file as text.
+            </summary>
+            <param name="path">The path or filename from the file to read.</param>
+            <returns>The file content as text.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.DeleteFile(System.String)">
+            <summary>
+            Delete a file.
+            </summary>
+            <param name="filename">The filename.</param>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.FileExists(System.String)">
+            <summary>
+            Determines whether the given path refers to an existing file on disk.
+            </summary>
+            <param name="filename">The filename.</param>
+            <returns>true if path refers to an existing file; false if the file does not exist.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.WriteFile(System.String,System.Byte[])">
+            <summary>
+            Write a file.
+            </summary>
+            <param name="filename">The filename.</param>
+            <param name="bytes">The bytes.</param>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.ReadFile(System.String)">
+            <summary>
+            Read a file as bytes.
+            </summary>
+            <param name="filename">The filename.</param>
+            <returns>The file content as bytes.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.ReadFileAsString(System.String)">
+            <summary>
+            Read a file as string.
+            </summary>
+            <param name="filename">The filename.</param>
+            <returns>The file content as a string.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.GetUnmatchedRequestsFolder">
+            <summary>
+            Gets the folder where the unmatched requests should be stored. For local file system, this would be `{CurrentFolder}/requests/unmatched`.
+            </summary>
+            <returns>The folder name.</returns>
+        </member>
+        <member name="M:WireMock.Handlers.IFileSystemHandler.WriteUnmatchedRequest(System.String,System.String)">
+            <summary>
+            Write a unmatched request to the Unmatched RequestsFolder.
+            </summary>
+            <param name="filename">The filename.</param>
+            <param name="text">The text.</param>
+        </member>
+        <member name="T:WireMock.IRequestMessage">
+            <summary>
+            IRequestMessage
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.ClientIP">
+            <summary>
+            Gets the Client IP Address.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Url">
+            <summary>
+            Gets the url (relative).
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.AbsoluteUrl">
+            <summary>
+            Gets the AbsoluteUrl.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.ProxyUrl">
+            <summary>
+            The ProxyUrl (if a proxy is used).
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.DateTime">
+            <summary>
+            Gets the DateTime.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Path">
+            <summary>
+            Gets the path (relative).
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.AbsolutePath">
+            <summary>
+            Gets the AbsolutePath.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.PathSegments">
+            <summary>
+            Gets the path segments.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.AbsolutePathSegments">
+            <summary>
+            Gets the absolute path segments.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Method">
+            <summary>
+            Gets the method.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Headers">
+            <summary>
+            Gets the headers.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Cookies">
+            <summary>
+            Gets the cookies.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Query">
+            <summary>
+            Gets the query.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.RawQuery">
+            <summary>
+            Gets the raw query.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.BodyData">
+            <summary>
+            The body.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Body">
+            <summary>
+            The original body as string. Convenience getter for Handlebars.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.BodyAsJson">
+            <summary>
+            The body (as JSON object). Convenience getter for Handlebars.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.BodyAsBytes">
+            <summary>
+            The body (as bytearray). Convenience getter for Handlebars.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.DetectedBodyType">
+            <summary>
+            The detected body type. Convenience getter for Handlebars.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.DetectedBodyTypeFromContentType">
+            <summary>
+            The detected body type from the Content-Type header. Convenience getter for Handlebars.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.DetectedCompression">
+            <summary>
+            The detected compression from the Content-Encoding header. Convenience getter for Handlebars.
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Host">
+            <summary>
+            Gets the Host
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Protocol">
+            <summary>
+            Gets the protocol
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Port">
+            <summary>
+            Gets the port
+            </summary>
+        </member>
+        <member name="P:WireMock.IRequestMessage.Origin">
+            <summary>
+            Gets the origin
+            </summary>
+        </member>
+        <member name="T:WireMock.IResponseMessage">
+            <summary>
+            IResponseMessage
+            </summary>
+        </member>
+        <member name="P:WireMock.IResponseMessage.BodyData">
+            <summary>
+            The Body.
+            </summary>
+        </member>
+        <member name="P:WireMock.IResponseMessage.BodyDestination">
+            <summary>
+            Gets the body destination (SameAsSource, String or Bytes).
+            </summary>
+        </member>
+        <member name="P:WireMock.IResponseMessage.BodyOriginal">
+            <summary>
+            Gets or sets the body.
+            </summary>
+        </member>
+        <member name="P:WireMock.IResponseMessage.FaultPercentage">
+            <summary>
+            Gets the Fault percentage.
+            </summary>
+        </member>
+        <member name="P:WireMock.IResponseMessage.FaultType">
+            <summary>
+            The FaultType.
+            </summary>
+        </member>
+        <member name="P:WireMock.IResponseMessage.Headers">
+            <summary>
+            Gets the headers.
+            </summary>
+        </member>
+        <member name="P:WireMock.IResponseMessage.StatusCode">
+            <summary>
+            Gets or sets the status code.
+            </summary>
+        </member>
+        <member name="M:WireMock.IResponseMessage.AddHeader(System.String,System.String)">
+            <summary>
+            Adds the header.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:WireMock.IResponseMessage.AddHeader(System.String,System.String[])">
+            <summary>
+            Adds the header.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="values">The values.</param>
+        </member>
+        <member name="T:WireMock.Logging.ILogEntry">
+            <summary>
+            ILogEntry
+            </summary>
+        </member>
+        <member name="P:WireMock.Logging.ILogEntry.Guid">
+            <summary>
+            Gets the unique identifier.
+            </summary>
+        </member>
+        <member name="P:WireMock.Logging.ILogEntry.MappingGuid">
+            <summary>
+            Gets the mapping unique identifier.
+            </summary>
+        </member>
+        <member name="P:WireMock.Logging.ILogEntry.MappingTitle">
+            <summary>
+            Gets the mapping unique title.
+            </summary>
+        </member>
+        <member name="P:WireMock.Logging.ILogEntry.PartialMappingGuid">
+            <summary>
+            Gets the partial mapping unique identifier.
+            </summary>
+        </member>
+        <member name="P:WireMock.Logging.ILogEntry.PartialMappingTitle">
+            <summary>
+            Gets the partial mapping unique title.
+            </summary>
+        </member>
+        <member name="P:WireMock.Logging.ILogEntry.PartialMatchResult">
+            <summary>
+            Gets the partial match result.
+            </summary>
+        </member>
+        <member name="P:WireMock.Logging.ILogEntry.RequestMatchResult">
+            <summary>
+            Gets the request match result.
+            </summary>
+        </member>
+        <member name="P:WireMock.Logging.ILogEntry.RequestMessage">
+            <summary>
+            Gets the request message.
+            </summary>
+        </member>
+        <member name="P:WireMock.Logging.ILogEntry.ResponseMessage">
+            <summary>
+            Gets the response message.
+            </summary>
+        </member>
+        <member name="T:WireMock.Logging.IWireMockLogger">
+            <summary>
+            IWireMockLogger interface
+            </summary>
+        </member>
+        <member name="M:WireMock.Logging.IWireMockLogger.Debug(System.String,System.Object[])">
+            <summary>
+            Writes the message at the Debug level using the specified parameters. 
+            </summary>
+            <param name="formatString">The format string.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:WireMock.Logging.IWireMockLogger.Info(System.String,System.Object[])">
+            <summary>
+            Writes the message at the Info level using the specified parameters. 
+            </summary>
+            <param name="formatString">The format string.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:WireMock.Logging.IWireMockLogger.Warn(System.String,System.Object[])">
+            <summary>
+            Writes the message at the Warning level using the specified parameters. 
+            </summary>
+            <param name="formatString">The format string.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:WireMock.Logging.IWireMockLogger.Error(System.String,System.Object[])">
+            <summary>
+            Writes the message at the Error level using the specified parameters. 
+            </summary>
+            <param name="formatString">The format string.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:WireMock.Logging.IWireMockLogger.Error(System.String,System.Exception)">
+            <summary>
+            Writes the message at the Error level using the specified exception. 
+            </summary>
+            <param name="formatString">The format string.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:WireMock.Logging.IWireMockLogger.DebugRequestResponse(WireMock.Admin.Requests.LogEntryModel,System.Boolean)">
+            <summary>
+            Writes the LogEntryModel (LogRequestModel, LogResponseModel and more).
+            </summary>
+            <param name="logEntryModel">The Request Log Model.</param>
+            <param name="isAdminRequest">Defines if this request is an admin request.</param>
+        </member>
+        <member name="T:WireMock.Matchers.Request.IRequestMatchResult">
+            <summary>
+            IRequestMatchResult
+            </summary>
+        </member>
+        <member name="P:WireMock.Matchers.Request.IRequestMatchResult.AverageTotalScore">
+            <summary>
+            Gets the match percentage.
+            </summary>
+            <value>
+            The match percentage.
+            </value>
+        </member>
+        <member name="P:WireMock.Matchers.Request.IRequestMatchResult.IsPerfectMatch">
+            <summary>
+            Gets or sets a value indicating whether this instance is perfect match.
+            </summary>
+            <value>
+            <c>true</c> if this instance is perfect match; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WireMock.Matchers.Request.IRequestMatchResult.MatchDetails">
+            <summary>
+            Gets the match details.
+            </summary>
+        </member>
+        <member name="P:WireMock.Matchers.Request.IRequestMatchResult.TotalNumber">
+            <summary>
+            Gets or sets the total number of matches.
+            </summary>
+            <value>
+            The total number of matches.
+            </value>
+        </member>
+        <member name="P:WireMock.Matchers.Request.IRequestMatchResult.TotalScore">
+            <summary>
+            Gets or sets the match-score.
+            </summary>
+            <value>
+            The match-score.
+            </value>
+        </member>
+        <member name="T:WireMock.Matchers.Request.MatchDetail">
+            <summary>
+            MatchDetail
+            </summary>
+        </member>
+        <member name="P:WireMock.Matchers.Request.MatchDetail.MatcherType">
+            <summary>
+            Gets or sets the type of the matcher.
+            </summary>
+        </member>
+        <member name="P:WireMock.Matchers.Request.MatchDetail.Score">
+            <summary>
+            Gets or sets the score between 0.0 and 1.0
+            </summary>
+        </member>
+        <member name="T:WireMock.Util.IBodyData">
+            <summary>
+            IBodyData
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.BodyAsBytes">
+            <summary>
+            The body (as bytearray).
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.BodyAsFile">
+            <summary>
+            Gets or sets the body as a file.
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.BodyAsFileIsCached">
+            <summary>
+            Is the body as file cached?
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.BodyAsJson">
+            <summary>
+            The body (as JSON object).
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.BodyAsJsonIndented">
+            <summary>
+            Gets or sets a value indicating whether child objects to be indented according to the Newtonsoft.Json.JsonTextWriter.Indentation and Newtonsoft.Json.JsonTextWriter.IndentChar settings.
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.BodyAsString">
+            <summary>
+            The body as string, this is defined when BodyAsString or BodyAsJson are not null.
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.DetectedBodyType">
+            <summary>
+            The detected body type (detection based on body content).
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.DetectedBodyTypeFromContentType">
+            <summary>
+            The detected body type (detection based on Content-Type).
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.DetectedCompression">
+            <summary>
+            The detected compression.
+            </summary>
+        </member>
+        <member name="P:WireMock.Util.IBodyData.Encoding">
+            <summary>
+            The body encoding.
+            </summary>
+        </member>
+        <member name="T:WireMock.ResponseBuilders.FaultType">
+            <summary>
+            The FaultType enumeration
+            </summary>
+        </member>
+        <member name="F:WireMock.ResponseBuilders.FaultType.NONE">
+            <summary>
+            No Fault
+            </summary>
+        </member>
+        <member name="F:WireMock.ResponseBuilders.FaultType.EMPTY_RESPONSE">
+            <summary>
+            Return a completely empty response.
+            </summary>
+        </member>
+        <member name="F:WireMock.ResponseBuilders.FaultType.MALFORMED_RESPONSE_CHUNK">
+            <summary>
+            Send a defined status header, then garbage, then close the connection.
+            </summary>
+        </member>
+        <member name="T:WireMock.Server.IWireMockServer">
+            <summary>
+            The fluent mock server interface.
+            </summary>
+        </member>
+        <member name="P:WireMock.Server.IWireMockServer.IsStarted">
+            <summary>
+            Gets a value indicating whether this server is started.
+            </summary>
+        </member>
+        <member name="P:WireMock.Server.IWireMockServer.LogEntries">
+            <summary>
+            Gets the request logs.
+            </summary>
+        </member>
+        <member name="P:WireMock.Server.IWireMockServer.MappingModels">
+            <summary>
+            Gets the mappings as MappingModels.
+            </summary>
+        </member>
+        <member name="P:WireMock.Server.IWireMockServer.Ports">
+            <summary>
+            Gets the ports.
+            </summary>
+        </member>
+        <member name="P:WireMock.Server.IWireMockServer.Urls">
+            <summary>
+            Gets the urls.
+            </summary>
+        </member>
+        <member name="E:WireMock.Server.IWireMockServer.LogEntriesChanged">
+            <summary>
+            Occurs when [log entries changed].
+            </summary>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.AddCatchAllMapping">
+            <summary>
+            Adds a 'catch all mapping'
+            
+            - matches all Paths and any Methods
+            - priority is set to 1000
+            - responds with a 404 "No matching mapping found"
+            </summary>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.AddGlobalProcessingDelay(System.TimeSpan)">
+            <summary>
+            The add request processing delay.
+            </summary>
+            <param name="delay">The delay.</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.AllowPartialMapping(System.Boolean)">
+            <summary>
+            Allows the partial mapping.
+            </summary>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.DeleteLogEntry(System.Guid)">
+            <summary>
+            Deletes a LogEntry.
+            </summary>
+            <param name="guid">The unique identifier.</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.DeleteMapping(System.Guid)">
+            <summary>
+            Deletes the mapping.
+            </summary>
+            <param name="guid">The unique identifier.</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.ReadStaticMappingAndAddOrUpdate(System.String)">
+            <summary>
+            Reads a static mapping file and adds or updates a single mapping.
+            
+            Calling this method manually forces WireMock.Net to read and apply the specified static mapping file.
+            </summary>
+            <param name="path">The path to the static mapping file.</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.ReadStaticMappings(System.String)">
+            <summary>
+            Reads the static mappings from a folder.
+            (This method is also used when WireMockServerSettings.ReadStaticMappings is set to true.
+            
+            Calling this method manually forces WireMock.Net to read and apply all static mapping files in the specified folder.
+            </summary>
+            <param name="folder">The optional folder. If not defined, use {CurrentFolder}/__admin/mappings</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.RemoveAuthentication">
+            <summary>
+            Removes the authentication.
+            </summary>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.Reset">
+            <summary>
+            Resets LogEntries and Mappings.
+            </summary>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.ResetMappings">
+            <summary>
+            Resets the Mappings.
+            </summary>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.ResetScenarios">
+            <summary>
+            Resets all Scenarios.
+            </summary>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.ResetLogEntries">
+            <summary>
+            Resets the LogEntries.
+            </summary>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.SaveStaticMappings(System.String)">
+            <summary>
+            Saves the static mappings.
+            </summary>
+            <param name="folder">The optional folder. If not defined, use {CurrentFolder}/__admin/mappings</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.SetAzureADAuthentication(System.String,System.String)">
+            <summary>
+            Sets the basic authentication.
+            </summary>
+            <param name="tenant">The Tenant.</param>
+            <param name="audience">The Audience or Resource.</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.SetBasicAuthentication(System.String,System.String)">
+            <summary>
+            Sets the basic authentication.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.SetMaxRequestLogCount(System.Nullable{System.Int32})">
+            <summary>
+            Sets the maximum RequestLog count.
+            </summary>
+            <param name="maxRequestLogCount">The maximum RequestLog count.</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.SetRequestLogExpirationDuration(System.Nullable{System.Int32})">
+            <summary>
+            Sets RequestLog expiration in hours.
+            </summary>
+            <param name="requestLogExpirationDuration">The RequestLog expiration in hours.</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.Stop">
+            <summary>
+            Stop this server.
+            </summary>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.WatchStaticMappings(System.String)">
+            <summary>
+            Watches the static mappings for changes.
+            </summary>
+            <param name="folder">The optional folder. If not defined, use {CurrentFolder}/__admin/mappings</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.WithMapping(WireMock.Admin.Mappings.MappingModel[])">
+            <summary>
+            Register the mappings (via <see cref="T:WireMock.Admin.Mappings.MappingModel"/>).
+            
+            This can be used if you have 1 or more <see cref="T:WireMock.Admin.Mappings.MappingModel"/> defined and want to register these in WireMock.Net directly instead of using the fluent syntax.
+            </summary>
+            <param name="mappings">The MappingModels</param>
+        </member>
+        <member name="M:WireMock.Server.IWireMockServer.WithMapping(System.String)">
+            <summary>
+            Register the mappings (via json string).
+            
+            This can be used if you the mappings as json string defined and want to register these in WireMock.Net directly instead of using the fluent syntax.
+            </summary>
+            <param name="mappings">The mapping(s) as json string.</param>
+        </member>
+        <member name="T:WireMock.Types.BodyType">
+            <summary>
+            The BodyType
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.BodyType.None">
+            <summary>
+            No body present
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.BodyType.String">
+            <summary>
+            Body is a String
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.BodyType.Json">
+            <summary>
+            Body is a Json object
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.BodyType.Bytes">
+            <summary>
+            Body is a Byte array
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.BodyType.File">
+            <summary>
+            Body is a File
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.BodyType.MultiPart">
+            <summary>
+            Body is a MultiPart
+            </summary>
+        </member>
+        <member name="T:WireMock.Types.CorsPolicyOptions">
+            <summary>
+            Policies to use when using CORS.
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.CorsPolicyOptions.None">
+            <summary>
+            Cors is disabled
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.CorsPolicyOptions.AllowAnyHeader">
+            <summary>
+            Ensures that the policy allows any header.
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.CorsPolicyOptions.AllowAnyMethod">
+            <summary>
+            Ensures that the policy allows any method.
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.CorsPolicyOptions.AllowAnyOrigin">
+            <summary>
+            Ensures that the policy allows any origin.
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.CorsPolicyOptions.AllowAll">
+            <summary>
+            Ensures that the policy allows any header, method and origin.
+            </summary>
+        </member>
+        <member name="T:WireMock.Types.ReplaceNodeOptions">
+            <summary>
+            Flags to use when replace a JSON node using the Transformer.
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.ReplaceNodeOptions.None">
+            <summary>
+            Default
+            </summary>
+        </member>
+        <member name="T:WireMock.Types.TransformerType">
+            <summary>
+            The ResponseMessage Transformers
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.TransformerType.Handlebars">
+            <summary>
+            https://github.com/Handlebars-Net/Handlebars.Net
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.TransformerType.Scriban">
+            <summary>
+            https://github.com/scriban/scriban : default
+            </summary>
+        </member>
+        <member name="F:WireMock.Types.TransformerType.ScribanDotLiquid">
+            <summary>
+            https://github.com/scriban/scriban : DotLiquid
+            </summary>
+        </member>
+        <member name="T:WireMock.Types.WireMockList`1">
+            <summary>
+            A special List which overrides the ToString() to return first value.
+            </summary>
+            <typeparam name="T">The generic type</typeparam>
+            <seealso cref="T:System.Collections.Generic.List`1" />
+        </member>
+        <member name="M:WireMock.Types.WireMockList`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WireMock.Types.WireMockList`1"/> class.
+            </summary>
+        </member>
+        <member name="M:WireMock.Types.WireMockList`1.#ctor(`0[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:WireMock.Types.WireMockList`1"/> class.
+            </summary>
+            <param name="collection">The collection whose elements are copied to the new list.</param>
+        </member>
+        <member name="M:WireMock.Types.WireMockList`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:WireMock.Types.WireMockList`1"/> class.
+            </summary>
+            <param name="collection">The collection whose elements are copied to the new list.</param>
+        </member>
+        <member name="M:WireMock.Types.WireMockList`1.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+        </member>
+    </members>
+</doc>

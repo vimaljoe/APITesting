@@ -1,0 +1,109 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITests\\APITests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITesting\\APITesting.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITesting\\APITesting.csproj",
+        "projectName": "APITesting",
+        "projectPath": "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITesting\\APITesting.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITests\\APITests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITests\\APITests.csproj",
+        "projectName": "APITests",
+        "projectPath": "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITests\\APITests.csproj",
+        "packagesPath": "C:\\Users\\EthanPonni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EthanPonni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITesting\\APITesting.csproj": {
+                "projectPath": "C:\\Users\\EthanPonni\\source\\repos\\APITesting\\APITesting\\APITesting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.7, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "WireMock.Net": {
+              "target": "Package",
+              "version": "[1.4.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
